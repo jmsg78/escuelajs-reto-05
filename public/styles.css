@@ -45,6 +45,44 @@ body {
   justify-content: space-between;
 }
 
+p {
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 5px;
+}
+
+a {
+
+  color: white;
+}
+
+* {box-sizing: border-box;}
+
+.message {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #437097;
+    
+}
+.message {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "start content";
+    margin-bottom: 1em;
+}
+.message .start {
+  grid-area: start;
+  padding: 10px;
+  background-color: #00c851;
+}
+.message .text {
+    grid-area: content;
+    padding: 10px;
+    
+}
+
 @keyframes fade {
   from {
     opacity: 0;
